@@ -286,7 +286,7 @@ sales_copilot/
 
 ```bash
 # 1. Clone
-git clone <repo-url>
+git clone https://github.com/wadhawan2411radhika/sales_copilot_agentic
 cd sales_copilot
 
 # 2. Virtual environment
