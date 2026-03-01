@@ -444,7 +444,6 @@ pytest tests/test_retrieval.py -v
 |---|---|
 | **Streaming output** | OpenAI streaming API + Rich live display |
 | **Persistent sessions** | Store history in SQLite keyed by `session_id` |
-| **FAISS → Qdrant** | Swap `storage/vector_store.py` — interface already abstracted |
 | **Audio ingestion** | Add Whisper transcription step before `parser.py` in pipeline |
 | **Hierarchical summarisation** | Map-reduce in `analyze_chunks` for calls exceeding context window |
 | **New analysis task** | Add prompt template to `generation/prompts.py` TASK_PROMPTS dict |
