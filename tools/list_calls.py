@@ -26,9 +26,9 @@ def list_calls(
         # Sorting
         sort_col = getattr(Call, sort_by, Call.ingested_at)
         if order == "desc":
-            query = query.order_by(sort_col.desc())
+            query = query.order_by(sort_col.desc(), Call.call_id.desc())
         else:
-            query = query.order_by(sort_col.asc())
+            query = query.order_by(sort_col.asc(), Call.call_id.asc())
 
         calls = query.limit(limit).all()
 
